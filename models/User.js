@@ -14,6 +14,8 @@ User.add({
 	password: { type: Types.Password, initial: true, required: true }
 }, 'Permissions', {
 	isAdmin: { type: Boolean, label: 'Can access Keystone', index: true }
+}, 'Integrations', {
+        linkedIn: { type: String, label: 'linkedIn user ID', index: true }
 });
 
 // Provide access to Keystone

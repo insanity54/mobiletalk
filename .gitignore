@@ -1,3 +1,10 @@
+*.master
+*~
+*#
+
+# config file
+config.json
+
 # Logs
 logs
 *.log

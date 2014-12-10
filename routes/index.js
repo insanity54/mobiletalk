@@ -41,6 +41,10 @@ exports = module.exports = function(app) {
 	app.get('/blog/post/:post', routes.views.post);
 	app.get('/gallery', routes.views.gallery);
 	app.all('/contact', routes.views.contact);
+
+    app.get('/integrations', middleware.requireUser, routes.views.integrations);
+//        app.get('/oauth/linkedin', routes.views.linkedin);
+//        app.get('/oauth/linkedin/callback', routes.views.linkedinCallback);
 	
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);

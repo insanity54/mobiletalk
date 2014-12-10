@@ -27,7 +27,7 @@ module.exports = {
 		var newEnquiry = new Enquiry.model({
 			name: { first: 'Test', last: 'User' },
 			email: 'contact@mobiletalk-wireless.com',
-			phone: '+61 2 1234 5678',
+			phone: '+1 509 928 0322',
 			enquiryType: 'message',
 			message: { md: 'Nice enquiry notification.' }
 		});
